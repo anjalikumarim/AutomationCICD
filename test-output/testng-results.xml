@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-04T17:11:39 IST" name="Default suite" finished-at="2024-03-04T17:11:40 IST" duration-ms="1494">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.testNGTestRunner@5bf0d49]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-03-04T17:11:39 IST" name="Default test" finished-at="2024-03-04T17:11:40 IST" duration-ms="1494">
+      <class name="Cucumber.testNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.testNGTestRunner@5bf0d49]" started-at="2024-03-04T17:11:39 IST" name="setUpClass" finished-at="2024-03-04T17:11:40 IST" duration-ms="1076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5769e7ae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.testNGTestRunner@5bf0d49]" started-at="2024-03-04T17:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-04T17:11:40 IST" duration-ms="311" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "browserName" is null
+at rahulshettyacademy.TestComponent.BaseTest.initializeDriver(BaseTest.java:25)
+at rahulshettyacademy.TestComponent.BaseTest.launchApplication(BaseTest.java:42)
+at rahulshettyacademy.stepDefinition.stepDefinitionImpl.I_landed_on_Ecommerce_page(stepDefinitionImpl.java:20)
+at ✽.I landed on Ecommerce page(file:///D:/Users/Administrator/eclipse-workspace/SeleniumFramworkDesign/src/test/java/Cucumber/OrderSubmit.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.testNGTestRunner@5bf0d49]" started-at="2024-03-04T17:11:40 IST" name="tearDownClass" finished-at="2024-03-04T17:11:40 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.testNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
